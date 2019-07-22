@@ -1,17 +1,35 @@
 import React from 'react'
-// import { Link } from "gatsby"
+import styled from 'styled-components'
+import breakpoint from 'styled-components-breakpoint'
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 
+//components
 import Layout from '../components/layout'
-// import Image from '../components/image'
 import SEO from '../components/seo'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-  </Layout>
-)
+//views
+import Hero from '../views/hero'
+
+// import CoffeBreakSvg from '../images/undraw-coffee-break.svg'
+// const CoffeBreak = styled(CoffeBreakSvg)`
+//   width: 10rem;
+//   ${breakpoint('tablet')`
+//     width: 20rem;
+//   `}
+// `
+
+class IndexPage extends React.Component {
+  render() {
+    return (
+      <>
+        <Layout />
+        <SEO title="Home" />
+        <Parallax pages={2} ref={ref => (this.parallax = ref)}>
+          <Hero offset={0} />
+        </Parallax>
+      </>
+    )
+  }
+}
 
 export default IndexPage
