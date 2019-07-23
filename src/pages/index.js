@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
-import breakpoint from 'styled-components-breakpoint'
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
+// import styled from 'styled-components'
+// import breakpoint from 'styled-components-breakpoint'
+import { Parallax } from 'react-spring/renderprops-addons'
 
 //components
 import Layout from '../components/layout'
@@ -21,13 +21,12 @@ import Hero from '../views/hero'
 class IndexPage extends React.Component {
   render() {
     return (
-      <>
-        <Layout />
+      <Layout>
         <SEO title="Home" />
-        <Parallax pages={2} ref={ref => (this.parallax = ref)}>
+        <Parallax pages={1} ref={ref => (this.parallax = ref)}>
           <Hero offset={0} />
         </Parallax>
-      </>
+      </Layout>
     )
   }
 }

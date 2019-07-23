@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `We make perfect coffe for you`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Lorem ipsum dolor sit amet.`,
+    author: `@kgnugur`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -34,6 +34,12 @@ module.exports = {
         rule: {
           include: /images/,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
   ],

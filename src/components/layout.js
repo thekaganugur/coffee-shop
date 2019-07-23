@@ -1,26 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
 import { ThemeProvider } from 'styled-components'
 
-import GlobalStyle from '../styles/globalStyle'
+import GlobalStyle from '../styles/global'
 import lightTheme from '../styles/themes/light'
 
-const Layout = () => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
+const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={lightTheme}>
       <>
         <GlobalStyle />
+        {children}
       </>
     </ThemeProvider>
   )

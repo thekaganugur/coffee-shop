@@ -10,7 +10,6 @@ const GlobalStyle = createGlobalStyle`
   *::before,
   *::after {
     box-sizing: border-box;
-    font-family: 'Source Code Pro', monospace;
   }
 
   html, body {
@@ -23,15 +22,9 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-color: #161719;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    background-color: ${props => props.theme.colors.primary};
   }
 
-  body {
-    margin: 0;
-  }
-  
   a {
     text-decoration: none;
     color: inherit;
