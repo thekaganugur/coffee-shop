@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Parallax } from 'react-spring/renderprops-addons'
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 
@@ -9,6 +9,8 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import FeatureCard from '../components/featureCard'
 import Footer from '../components/footer'
+
+import Instagram from '../components/instagram'
 
 //views
 import Hero from '../views/hero'
@@ -44,7 +46,7 @@ const indexPage = () => {
   const description = data.site.siteMetadata.description
 
   return (
-    <Parallax pages={4}>
+    <Parallax pages={6}>
       <Layout>
         <SEO title="Home" />
         <Hero offset={0}>
@@ -83,6 +85,9 @@ const indexPage = () => {
             />
           </FeaturesWrapper>
         </Features>
+        <ParallaxLayer offset={3}>
+          <Instagram />
+        </ParallaxLayer>
         <Footer>
           &copy; 2019 by Kağan UĞUR.{' '}
           <a href="https://github.com/kgnugur/">GitHub</a>.
