@@ -13,12 +13,20 @@ const ContentWrapper = styled(Content)`
 
 const GridWrapper = styled.div`
   display: grid;
-  grid-gap: 0.8rem;
+  grid-gap: 0.6rem;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
+  padding: 0.5rem 0.9rem;
+  width: 100%;
+  border-radius: 20px;
+  background: #7398b0;
 
-  div:nth-of-type(n + 5) {
+  div {
+    border-radius: 5000px;
+  }
+
+  a:nth-of-type(n + 5) {
     display: none !important;
   }
 
@@ -26,16 +34,23 @@ const GridWrapper = styled.div`
     margin: 0;
   }
 
-  ${breakpoint('tablet')`
-    grid-gap: 1rem;
-    grid-template-columns: repeat(5, 1fr);
+  a {
+    height: 135px;
+  }
 
-    div:nth-of-type(n + 5) {
+  ${breakpoint('tablet')`
+    grid-gap: 0.8rem;
+    grid-template-columns: repeat(5, 1fr);
+  width: initial;
+
+    a:nth-of-type(n + 5) {
       display: inline-block !important;
     }
   `};
 
   ${breakpoint('desktop')`
+    padding: 1rem 2rem;
+
   `};
 `
 
