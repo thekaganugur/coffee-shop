@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
-import { ParallaxLayer } from 'react-spring/renderprops-addons'
 
 import { UpDown, UpDownWide } from '../styles/animations'
 import { Divider } from '../styles/divider'

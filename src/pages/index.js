@@ -33,17 +33,33 @@ const FeaturesWrapper = styled.div`
 
 const indexPage = () => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query {
       site {
         siteMetadata {
           title
           description
         }
       }
+
+      allInstaNode(limit: 5, sort: { order: DESC, fields: timestamp }) {
+        edges {
+          node {
+            id
+            localFile {
+              childImageSharp {
+                fixed(width: 135, height: 135) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+          }
+        }
+      }
     }
   `)
   const title = data.site.siteMetadata.title
   const description = data.site.siteMetadata.description
+  const imageEdges = data.allInstaNode.edges
 
   return (
     <Parallax pages={6}>
@@ -85,9 +101,7 @@ const indexPage = () => {
             />
           </FeaturesWrapper>
         </Features>
-        <ParallaxLayer offset={3}>
-          <Instagram />
-        </ParallaxLayer>
+        <Instagram offset={3.5} imageEdges={imageEdges}></Instagram>
         <Footer>
           &copy; 2019 by Kağan UĞUR.{' '}
           <a href="https://github.com/kgnugur/">GitHub</a>.
