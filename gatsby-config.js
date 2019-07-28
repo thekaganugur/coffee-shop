@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `We make perfect coffe for you`,
+    title: `We make perfect coffee for you`,
     description: `Lorem ipsum dolor sit amet.`,
     author: `@kgnugur`,
   },

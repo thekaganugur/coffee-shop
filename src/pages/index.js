@@ -73,7 +73,7 @@ const indexPage = () => {
           <FeaturesWrapper>
             <FeatureCard
               image={'coffeeBreak'}
-              title={'Drink best coffe at the hearth of city'}
+              title={'Drink best coffee at the hearth of city'}
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in scelerisque magna. Etiam interdum, erat. '
               }
