@@ -13,14 +13,14 @@ const ContentWrapper = styled(Content)`
 
 const GridWrapper = styled.div`
   display: grid;
-  grid-gap: 0.6rem;
+  grid-gap: 1.2rem;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
   padding: 0.5rem 0.9rem;
   width: 100%;
-  border-radius: 20px;
-  background: #7398b0;
+  border-radius: 5px;
+  border: solid 1px #888;
 
   div {
     border-radius: 5000px;
@@ -39,18 +39,19 @@ const GridWrapper = styled.div`
   }
 
   ${breakpoint('tablet')`
-    grid-gap: 0.8rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    width: initial;
+
+  `};
+
+  ${breakpoint('desktop')`
     grid-template-columns: repeat(5, 1fr);
-  width: initial;
+    padding: 1rem 2rem;
 
     a:nth-of-type(n + 5) {
       display: inline-block !important;
     }
-  `};
-
-  ${breakpoint('desktop')`
-    padding: 1rem 2rem;
-
   `};
 `
 
