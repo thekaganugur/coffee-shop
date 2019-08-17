@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
+import { Parallax } from 'react-spring/renderprops-addons'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 
@@ -62,7 +62,7 @@ const indexPage = () => {
   const imageEdges = data.allInstaNode.edges
 
   return (
-    <Parallax pages={6}>
+    <Parallax pages={4.5}>
       <Layout>
         <SEO title="Home" />
         <Hero offset={0}>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
@@ -57,7 +56,11 @@ const GridWrapper = styled.div`
 
 const Instagram = ({ offset, imageEdges }) => {
   const images = imageEdges.map(edge => (
-    <a href="https://www.instagram.com/starbucks/" target="_blank">
+    <a
+      href="https://www.instagram.com/starbucks/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Img
         style={{
           height: '135px',

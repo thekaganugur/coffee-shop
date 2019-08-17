@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { UpDown, UpDownWide } from '../styles/animations'
-import { Divider, DividerMiddle } from '../styles/divider'
+import { DividerMiddle } from '../styles/divider'
 import Content from '../styles/content'
 
 const features = ({ children, offset }) => {
