@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://pedantic-spence-ffd832.netlify.com">
-    <img alt="coffee cup" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="coffee cup" src="https://github.com/kgnugur/coffee-shop/blob/master/src/images/coffee-cup-icon.png" width="60" />
   </a>
 </p>
 <h1 align="center">
