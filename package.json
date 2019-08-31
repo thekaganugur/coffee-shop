@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "coffee-shop",
+  "description": "Coffee shop themed landing page",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kagan Ugur <kgnugur@gmail.com>",
   "dependencies": {
     "gatsby": "^2.13.31",
     "gatsby-image": "^2.2.6",
@@ -31,7 +30,10 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "coffee",
+    "cofeee shop",
+    "landing page"
   ],
   "license": "MIT",
   "scripts": {
@@ -44,9 +46,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/kgnugur/coffee-shop"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/kgnugur/coffee-shop/issues"
   }
 }
